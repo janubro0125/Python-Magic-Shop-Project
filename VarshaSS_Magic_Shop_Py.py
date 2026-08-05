@@ -827,13 +827,13 @@ def start():
         login()
 
 def show_logo():
-    logo=Image.open(r"C:\Users\ADMIN\Downloads\Magic Shop Logo.png")
+    logo=Image.open("assets/images/Magic Shop Logo.png")
     logo.show()
 
 def play_intro_music():
     pg.init()
     pg.mixer.init()
-    pg.mixer.music.load(r"C:\Users\ADMIN\Downloads\bts_bighit_intro.mp3")
+    pg.mixer.music.load("assets/music/bts_bighit_intro.mp3")
     pg.mixer.music.set_volume(0.7)
     pg.mixer.music.play()
     t.sleep(5)
